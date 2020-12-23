@@ -21,7 +21,9 @@ shinyApp(ui, server)
                     c("DATA SCIENCE IMMERSIVE - INTRO" = "intro",
                       "PRE-BOOTCAMP DATA SCIENCE" = "pre",
                       "DATA SCIENCE IMMERSIVE - STATISTICAL PROGRAMMING WITH R" = "r",
-                      "DATA SCIENCE IMMERSIVE - PYTHON" = "python"))
+                      "DATA SCIENCE IMMERSIVE - PYTHON" = "python")) ,
+        submitButton("Submit", icon("send")),
+        submitButton("Cancel", icon("remove"))
       )
     }
     
